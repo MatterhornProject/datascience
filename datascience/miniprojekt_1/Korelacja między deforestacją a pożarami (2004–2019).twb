@@ -1,0 +1,1149 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0807.0327                               -->
+<workbook original-version='18.1' source-build='2024.2.2 (20242.24.0807.0327)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Analiza trendów deforestacji na poziomie stanów' inline='true' name='federated.0gws3ut1771vjf14hzqg10q1ym1h' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Analiza trendów deforestacji na poziomie stanów' name='textscan.0k1q1t00e5jvsc1gpm9v51omfy98'>
+            <connection class='textscan' directory='C:/Users/macie/Desktop/ISA/miniprojekt-1' filename='Analiza trendów deforestacji na poziomie stanów.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0k1q1t00e5jvsc1gpm9v51omfy98' name='Analiza trendów deforestacji na poziomie stanów.csv' table='[Analiza trendów deforestacji na poziomie stanów#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='pl_PL'>
+            <column datatype='integer' name='year' ordinal='0' />
+            <column datatype='string' name='state' ordinal='1' />
+            <column datatype='integer' name='total_deforestation' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0k1q1t00e5jvsc1gpm9v51omfy98' name='Analiza trendów deforestacji na poziomie stanów.csv' table='[Analiza trendów deforestacji na poziomie stanów#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='pl_PL'>
+            <column datatype='integer' name='year' ordinal='0' />
+            <column datatype='string' name='state' ordinal='1' />
+            <column datatype='integer' name='total_deforestation' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Analiza trendów deforestacji na poziomie stanów.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;zł&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;pl_PL&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[Analiza trendów deforestacji na poziomie stanów.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analiza trendów deforestacji na poziomie stanów.csv_C3020164244246018E723DF1B304E8D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[Analiza trendów deforestacji na poziomie stanów.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analiza trendów deforestacji na poziomie stanów.csv_C3020164244246018E723DF1B304E8D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_deforestation</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_deforestation]</local-name>
+            <parent-name>[Analiza trendów deforestacji na poziomie stanów.csv]</parent-name>
+            <remote-alias>total_deforestation</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analiza trendów deforestacji na poziomie stanów.csv_C3020164244246018E723DF1B304E8D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Analiza trendów deforestacji na poziomie stanów.csv' datatype='table' name='[__tableau_internal_object_id__].[Analiza trendów deforestacji na poziomie stanów.csv_C3020164244246018E723DF1B304E8D2]' role='measure' type='quantitative' />
+      <column datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/macie/AppData/Local/Temp/TableauTemp/#TableauTemp_1xv0dje10xhhvu1f7blzr0vd4so1.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/29/2024 06:32:38 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Analiza trendów deforestacji na poziomie stanów.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analiza trendów deforestacji na poziomie stanów.csv_C3020164244246018E723DF1B304E8D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>state</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Analiza trendów deforestacji na poziomie stanów.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analiza trendów deforestacji na poziomie stanów.csv_C3020164244246018E723DF1B304E8D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_deforestation</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_deforestation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_deforestation</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Analiza trendów deforestacji na poziomie stanów.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>137</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Analiza trendów deforestacji na poziomie stanów.csv_C3020164244246018E723DF1B304E8D2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Poland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Analiza trendów deforestacji na poziomie stanów.csv' id='Analiza trendów deforestacji na poziomie stanów.csv_C3020164244246018E723DF1B304E8D2'>
+            <properties context=''>
+              <relation connection='textscan.0k1q1t00e5jvsc1gpm9v51omfy98' name='Analiza trendów deforestacji na poziomie stanów.csv' table='[Analiza trendów deforestacji na poziomie stanów#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='pl_PL'>
+                  <column datatype='integer' name='year' ordinal='0' />
+                  <column datatype='string' name='state' ordinal='1' />
+                  <column datatype='integer' name='total_deforestation' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Korelacja między deforestacją a pożarami' inline='true' name='federated.1u5yxsk1faa96h1e2jskt1er5lsj' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Korelacja między deforestacją a pożarami' name='textscan.1uy25fq1mule0d1gwos9k1s1ax17'>
+            <connection class='textscan' directory='C:/Users/macie/Desktop/ISA/miniprojekt-1' filename='Korelacja między deforestacją a pożarami.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1uy25fq1mule0d1gwos9k1s1ax17' name='Korelacja między deforestacją a pożarami.csv' table='[Korelacja między deforestacją a pożarami#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='pl_PL'>
+            <column datatype='integer' name='year' ordinal='0' />
+            <column datatype='integer' name='total_deforestation' ordinal='1' />
+            <column datatype='integer' name='total_fires' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1uy25fq1mule0d1gwos9k1s1ax17' name='Korelacja między deforestacją a pożarami.csv' table='[Korelacja między deforestacją a pożarami#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='pl_PL'>
+            <column datatype='integer' name='year' ordinal='0' />
+            <column datatype='integer' name='total_deforestation' ordinal='1' />
+            <column datatype='integer' name='total_fires' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Korelacja między deforestacją a pożarami.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;zł&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;pl_PL&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[Korelacja między deforestacją a pożarami.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Korelacja między deforestacją a pożarami.csv_EDAFD7E43E3B44FBB71CAACEEFF23905]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_deforestation</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_deforestation]</local-name>
+            <parent-name>[Korelacja między deforestacją a pożarami.csv]</parent-name>
+            <remote-alias>total_deforestation</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Korelacja między deforestacją a pożarami.csv_EDAFD7E43E3B44FBB71CAACEEFF23905]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_fires</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_fires]</local-name>
+            <parent-name>[Korelacja między deforestacją a pożarami.csv]</parent-name>
+            <remote-alias>total_fires</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Korelacja między deforestacją a pożarami.csv_EDAFD7E43E3B44FBB71CAACEEFF23905]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Korelacja między deforestacją a pożarami.csv' datatype='table' name='[__tableau_internal_object_id__].[Korelacja między deforestacją a pożarami.csv_EDAFD7E43E3B44FBB71CAACEEFF23905]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[total_deforestation]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[total_fires]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[total_deforestation]' derivation='Sum' name='[sum:total_deforestation:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[total_fires]' derivation='Sum' name='[sum:total_fires:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/macie/AppData/Local/Temp/TableauTemp/#TableauTemp_0m9pay704fa8zn15761bi0v3jh7l.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/29/2024 06:45:59 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Korelacja między deforestacją a pożarami.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Korelacja między deforestacją a pożarami.csv_EDAFD7E43E3B44FBB71CAACEEFF23905]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_deforestation</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_deforestation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_deforestation</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Korelacja między deforestacją a pożarami.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Korelacja między deforestacją a pożarami.csv_EDAFD7E43E3B44FBB71CAACEEFF23905]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_fires</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_fires]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_fires</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Korelacja między deforestacją a pożarami.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Korelacja między deforestacją a pożarami.csv_EDAFD7E43E3B44FBB71CAACEEFF23905]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1u5yxsk1faa96h1e2jskt1er5lsj].[sum:total_deforestation:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1u5yxsk1faa96h1e2jskt1er5lsj].[sum:total_fires:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Poland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Korelacja między deforestacją a pożarami.csv' id='Korelacja między deforestacją a pożarami.csv_EDAFD7E43E3B44FBB71CAACEEFF23905'>
+            <properties context=''>
+              <relation connection='textscan.1uy25fq1mule0d1gwos9k1s1ax17' name='Korelacja między deforestacją a pożarami.csv' table='[Korelacja między deforestacją a pożarami#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='pl_PL'>
+                  <column datatype='integer' name='year' ordinal='0' />
+                  <column datatype='integer' name='total_deforestation' ordinal='1' />
+                  <column datatype='integer' name='total_fires' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Suma deforestacji dla wszystkich stanów na przestrzeni lat' inline='true' name='federated.0efoyi709s2ot61eg8srh11nv64l' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Suma deforestacji dla wszystkich stanów na przestrzeni lat' name='textscan.0y7tkz51rh8pvm1fq60e10sgn93s'>
+            <connection class='textscan' directory='C:/Users/macie/Desktop/ISA/miniprojekt-1' filename='Suma deforestacji dla wszystkich stanów na przestrzeni lat.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0y7tkz51rh8pvm1fq60e10sgn93s' name='Suma deforestacji dla wszystkich stanów na przestrzeni lat.csv' table='[Suma deforestacji dla wszystkich stanów na przestrzeni lat#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='pl_PL'>
+            <column datatype='integer' name='year' ordinal='0' />
+            <column datatype='integer' name='total_deforestation' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0y7tkz51rh8pvm1fq60e10sgn93s' name='Suma deforestacji dla wszystkich stanów na przestrzeni lat.csv' table='[Suma deforestacji dla wszystkich stanów na przestrzeni lat#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='pl_PL'>
+            <column datatype='integer' name='year' ordinal='0' />
+            <column datatype='integer' name='total_deforestation' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Suma deforestacji dla wszystkich stanów na przestrzeni lat.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;zł&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;pl_PL&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[Suma deforestacji dla wszystkich stanów na przestrzeni lat.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Suma deforestacji dla wszystkich stanów na przestrzeni lat.csv_14149EA973D44F28ACB41BE2D0716B36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_deforestation</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_deforestation]</local-name>
+            <parent-name>[Suma deforestacji dla wszystkich stanów na przestrzeni lat.csv]</parent-name>
+            <remote-alias>total_deforestation</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Suma deforestacji dla wszystkich stanów na przestrzeni lat.csv_14149EA973D44F28ACB41BE2D0716B36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Suma deforestacji dla wszystkich stanów na przestrzeni lat.csv' datatype='table' name='[__tableau_internal_object_id__].[Suma deforestacji dla wszystkich stanów na przestrzeni lat.csv_14149EA973D44F28ACB41BE2D0716B36]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/macie/AppData/Local/Temp/TableauTemp/#TableauTemp_0z0sfgw1m0tpgl1b6du4p1hr6zxr.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/29/2024 07:03:13 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Suma deforestacji dla wszystkich stanów na przestrzeni lat.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Suma deforestacji dla wszystkich stanów na przestrzeni lat.csv_14149EA973D44F28ACB41BE2D0716B36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_deforestation</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_deforestation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_deforestation</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Suma deforestacji dla wszystkich stanów na przestrzeni lat.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Suma deforestacji dla wszystkich stanów na przestrzeni lat.csv_14149EA973D44F28ACB41BE2D0716B36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Poland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Suma deforestacji dla wszystkich stanów na przestrzeni lat.csv' id='Suma deforestacji dla wszystkich stanów na przestrzeni lat.csv_14149EA973D44F28ACB41BE2D0716B36'>
+            <properties context=''>
+              <relation connection='textscan.0y7tkz51rh8pvm1fq60e10sgn93s' name='Suma deforestacji dla wszystkich stanów na przestrzeni lat.csv' table='[Suma deforestacji dla wszystkich stanów na przestrzeni lat#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='pl_PL'>
+                  <column datatype='integer' name='year' ordinal='0' />
+                  <column datatype='integer' name='total_deforestation' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Consolas'>Analiza trendów deforestacji (2004–2019) na poziomie stanów</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Analiza trendów deforestacji na poziomie stanów' name='federated.0gws3ut1771vjf14hzqg10q1ym1h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gws3ut1771vjf14hzqg10q1ym1h'>
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[total_deforestation]' derivation='Sum' name='[sum:total_deforestation:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[total_deforestation]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0gws3ut1771vjf14hzqg10q1ym1h].[none:state:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Acre&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Amapa&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Amazonas&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Maranhao&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Mato Grosso&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Para&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Rondonia&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Roraima&quot;' />
+              <groupfilter function='member' level='[none:state:nk]' member='&quot;Tocantins&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0gws3ut1771vjf14hzqg10q1ym1h].[none:state:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gws3ut1771vjf14hzqg10q1ym1h].[none:state:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0gws3ut1771vjf14hzqg10q1ym1h].[sum:total_deforestation:qk]</rows>
+        <cols>[federated.0gws3ut1771vjf14hzqg10q1ym1h].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{DDC86C54-3666-4AFC-ABFC-0DEE93B6D529}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Consolas'>Korelacja między deforestacją a pożarami (2004–2019)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Korelacja między deforestacją a pożarami' name='federated.1u5yxsk1faa96h1e2jskt1er5lsj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1u5yxsk1faa96h1e2jskt1er5lsj'>
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_deforestation]' derivation='Sum' name='[sum:total_deforestation:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_fires]' derivation='Sum' name='[sum:total_fires:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[total_deforestation]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[total_fires]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1u5yxsk1faa96h1e2jskt1er5lsj].[none:year:qk]' included-values='in-range'>
+            <min>2004</min>
+            <max>2019</max>
+          </filter>
+          <slices>
+            <column>[federated.1u5yxsk1faa96h1e2jskt1er5lsj].[none:year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1u5yxsk1faa96h1e2jskt1er5lsj].[sum:total_fires:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1u5yxsk1faa96h1e2jskt1er5lsj].[sum:total_deforestation:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1u5yxsk1faa96h1e2jskt1er5lsj].[sum:total_fires:qk]' />
+              <text column='[federated.1u5yxsk1faa96h1e2jskt1er5lsj].[sum:total_deforestation:qk]' />
+              <text column='[federated.1u5yxsk1faa96h1e2jskt1er5lsj].[sum:total_fires:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1u5yxsk1faa96h1e2jskt1er5lsj].[sum:total_fires:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1u5yxsk1faa96h1e2jskt1er5lsj].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1u5yxsk1faa96h1e2jskt1er5lsj].[sum:total_deforestation:qk] + [federated.1u5yxsk1faa96h1e2jskt1er5lsj].[sum:total_fires:qk])</rows>
+        <cols>[federated.1u5yxsk1faa96h1e2jskt1er5lsj].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{ECDA7C82-3BA5-43AC-AB3A-93DE6BFBB527}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Consolas'>Suma deforestacji dla wszystkich stanów na przestrzeni lat</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Suma deforestacji dla wszystkich stanów na przestrzeni lat' name='federated.0efoyi709s2ot61eg8srh11nv64l' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0efoyi709s2ot61eg8srh11nv64l'>
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_deforestation]' derivation='Sum' name='[sum:total_deforestation:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[total_deforestation]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0efoyi709s2ot61eg8srh11nv64l].[sum:total_deforestation:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <text column='[federated.0efoyi709s2ot61eg8srh11nv64l].[sum:total_deforestation:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#59a14f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0efoyi709s2ot61eg8srh11nv64l].[sum:total_deforestation:qk]</rows>
+        <cols>[federated.0efoyi709s2ot61eg8srh11nv64l].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{4CD3ADF5-28CA-428B-9187-67FA24A3EBB2}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='106'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0gws3ut1771vjf14hzqg10q1ym1h].[none:state:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0gws3ut1771vjf14hzqg10q1ym1h].[:Measure Names]</field>
+            <field>[federated.0gws3ut1771vjf14hzqg10q1ym1h].[Multiple Values]</field>
+            <field>[federated.0gws3ut1771vjf14hzqg10q1ym1h].[none:state:nk]</field>
+            <field>[federated.0gws3ut1771vjf14hzqg10q1ym1h].[none:year:qk]</field>
+            <field>[federated.0gws3ut1771vjf14hzqg10q1ym1h].[sum:total_deforestation:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FCF63944-9DAF-412C-939D-E902FCECCD9C}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1u5yxsk1faa96h1e2jskt1er5lsj].[:Measure Names]' type='color' />
+            <card pane-specification-id='1' param='[federated.1u5yxsk1faa96h1e2jskt1er5lsj].[sum:total_fires:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1u5yxsk1faa96h1e2jskt1er5lsj].[none:year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{76B9EA9B-2717-4D71-A059-AF2C7B30481F}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0efoyi709s2ot61eg8srh11nv64l].[none:year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0A39F14D-AA0B-42AB-86EA-0311EAE4672B}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAAXY0lEQVR4nO3daXAk513H8e/T03OPNNJodB+rY7X3rld7mDhxiEk4U7ETx5AXQBVHURRn
+      QaWggCreUEXxmqMKKKqAUAQIxMaObUJMUkm4Ysdk79Vqdd8azUijkUYazdndvJDXTtbSrkbT
+      rZ7WPJ9XXnv3mZ+181O3ev79tDAMw0CSapRixaJO6pTMag2nZLWkALquW7GsJTRNszvCvsms
+      5rOkAJLkFLIAUk2TBZBqmiyAVNNkAaSaJgsg1TRZAKmmyQJINU0WQKppsgBSTVPL/QPZ9Co3
+      x5c42R1lOZnG4w/iVaClqY5YqkBvV4sVOSXJEmUVwDB0phdWqPMJ8vk8uq6Tz+fJZtaJJVa5
+      fHkIXdfRdd0xw1C6rlMqleyOsS8yq/nKKsB2apn0doGNtWVKxVZOnD7D2P37BINhfFqWTK5I
+      vd+NYRi4XC6rMpuqVCqhqmUfCG0hs5pPHOR+gJWVFUI+N7OLy4SbWvC6oLGhnnhijba2FjRN
+      kwWwgMxqvgMV4HFkAawhs5pPXgWSalrNF0A3nHPzjmS+mi/AX735ZxRKBbtjSDap+QLUeeuZ
+      TU3ZHUOySc0X4GLnZa7Pf8fuGJJNar4Ax6MnmUyOo+vOuIlbMlfNF8Cregn7Gohvxe2OItmg
+      5gsAO6dBtxav2R1DsoEsAHC2/TzDsTuOmV+SzCMLAIT9DejopPNpu6NIh6zsAmyvr/Ct79wk
+      v5Xizt17xFdTzM3OkdtaY2YhYUVGywkEZ9suMBy7bXcU6ZCVNQtkGDojI6PoRglRLKAGQviC
+      YdLxBbKaiytXhsDQ0TQNIYSVuU2j6zqKohBLL/La8Mv84lO/ZnekPT3I6gROyVr2OPRWtkgq
+      GaOrrZ2u3uNM3r+HPxjGr+fYzOYJB7yOHIfubOxmPbtGiRI+1Wd3rF05ZcAMnJO1rITBSAdP
+      RjpYXe0g0ljP5MQEbZ3duBWDhnA9idU1woFmq7JaShEKfdHjTK6Oc7btvN1xpEMix6G/6zvV
+      aGKE/5t7k5++8vM2p9qdU76rgnOyVv9J2iHqaxpgdm2Gkl79t/JJ5pAF+C4el4fmUDOxjUW7
+      o0iHRBbgIUNdV7ixKIfjaoUswENOt57jfvye/FS4RsgCPCTkrcPtcpPKrtkdRToEsgC7ON9+
+      kTtLN+2OIR0CWYBdXOgY4vbSDXkaVANkAXbRHGphK79Jtpi1O4pkMVmAXQghONFymrGVEbuj
+      SBaTBdjDUOcVbizIy6FHXdkFKOW3uHNvDICV2BwLy0kS8QRaMcvS8qrpAe3SE+llaWOBola0
+      O4pkoTJ3hzaYnJpD1zT0Up5EMoXi1hBalpV4jIEz5zEMA8MwHPO0+L2yKii013cyn5qlN9Jv
+      Q7L3Owpf12pT3jj02hKx5Cb57XWM/DaGx0MqsUJr2Eu+qKEI3r1y4qQrKHtlHeq8wrX5tznW
+      2HfIifZ2FL6u1aS8ceimTp55upP5+Tm6u3vQSzliiTQKGi3RMPNLy/R2dzjqfoBHZT3VdoY3
+      Rl9HKAJF2P/j0lH5ulaTA82rdnf3AKCoPjo73rt5pLc7YE6qKuF3Bwh4giQzKzSHWu2OI1nA
+      /m9rVe6JjkvcXLxudwzJIrIAj3G+4yJ3Y7cccT4rlU8W4DEa/REKpQKZwpbdUSQLyAI8hhCC
+      023nGFm+a3cUyQKyAPtwsfMyN+XWiUeSLMA+dDV0k9iKywdpHEGyAPugCIWexj6m1ybtjiKZ
+      TBZgny51X+XGwv/ZHUMymSzAPh2PnmBqdQJNPkjjSJEF2Cev6qUhECGxuWx3FMlEZRfA0IrM
+      LyxRKuSYmhgnub5JOp3G0DVSqQ0rMlaNoc7L3JBXg46UMgtgMDs1SWxlhUKhSNexXuZmpojH
+      4sxOjoHba03KKnG2/QL3luWDNI6Ssobh8ptJVjM6eiGL6la5d/cOxwZOsjgxQrIk6DnuQ9d1
+      dF13zJtE13VKpf1thRhQgxiGQSqzRr0vbHGy9ysnq92ckrWszXGLhRyp9TQzMzOE/W6yio+m
+      xgil3DatTXUspvIM9nY6dnPc/fjKyOvUeev4UP9HLEy1O6dsOAvOySp3hy7zLyqWXuLl2//C
+      L3/oNw79ISBOeVOBc7LKq0BlaqtrJ7W9Rr6UtzuKZAJZgDIJITgePcHE6qjdUSQTyAIcwFCX
+      3DLlqJAFOID+pgFmU/JBGkeBLMABqC43raE2luSDNBxPFuCAdk6D5HCc08kCHNDptp0HaehG
+      9W/+JO1NFuCAgp4gHtXDejZldxSpArIAFbjQMcStxRt2x5AqIAtQgQsdQ9yRD9JwtLILoGsF
+      ZucX0UsFJsbHSGdybGxsYOgl1tbWrchYtaLBZjKFLfkgDQc7wDj0FInkKlMT47R19zIzNUli
+      OcHMxBiK129NyiolhOBk61nuJ4btjiIdUFnTSrn0Kol0kVJ+i4xST9DnRlEgl9kgUxIcG/Qe
+      6XHo3TzRPsQ3Jr7KhbYhE1PtzikjxuCcrGUVQPXXM9jnYmamSHdrhNt3hwmGGlADQY5H65ia
+      XeR4b6djdgaGyqcWe5v6iV1fwhAGbpfbxGTv55QJS3BO1vIK4PYSiXiJRCIARFo7v+e/H68z
+      L5hTuBQX3Q09zKVmGIgO2h1HKpO8CmSCoa6rXJefCjuSLIAJTracZnxlVH4q7ECyACbwuX3U
+      eetY3VqxO4pUJlkAk8gNdJ1JFsAk8kEaziQLYJKwv4GiVpQP0nAYWQCTCARn288zvHzH7ihS
+      GWQBTHSx8zI3F65hIE+DnEIWwESd4W5WtuIUtaLdUaR9kgUwkRCCvqYBplYn7I4i7VNZBTAM
+      g1RyhfTWNoahs5KIUyhpFPIFDMMgl8tZldMxLslPhR2lvCOAXqSoK4zdH2FyfBTd5WZkZITZ
+      mVkSC9Osbcrd0o43n2QqKR+k4RRlDcMJlwctlyZX1KkP+pifm8fjC5LLrJNMK3zgan/NjUM/
+      TCCI+CMsrS/SXt9h2rrgnBFjcE7WsgpQzG1RMNyE3ILExjbRaITk2gZ1wTAdYS9TC3H6u1pr
+      ahx6N5e6n+R27DrdkR5T13XKiDE4J2tZu0MbhkF2O4OievB6VLYz23j9ATB0VJeLYknD7VaP
+      9O7Q+7GV3+TP/+eP+e2P/r6pO0g75U0Fzsla3imQEASCoXd/HQw9+OedHyXc7ur/Hz4MIW8d
+      ilBI5zYI+xvsjiM9grwMapHzHRe5E7tpdwzpMWQBLLIzHXrdMRcDapUsgEVaQq2sZ1MUNHlp
+      uJrJAlhECMGJ5lOMJu7bHUV6BFkAC13quiofpFHlZAEs1Nc0wFxqWn4qXMVkASzkUly013ey
+      sD5ndxRpD7IAFtsZjpOnQdVKFsBiOw/SGJZbplQpWQCL+d1+fG6ffJBGlSqrALqWZ/T+fd56
+      +xqbqQS3794jvppicmKSzeQy0wsJq3I62oNbJaXqU9YwHEBsYZqpxTXqveANhBCqn9x6gm3N
+      xZNXhjAMHU3TTB0Cs5Ku6yiKtQfC1HaSz1/7W379w79V0TqHkdUsTsla1vRaqZCjobmLyOo6
+      SsBHU3sPC1PjBIJhwqpGYn2L1sZQzY9DPyxa10K2lKVoFPC7AwdexykTluCcrGVVVHG5iC/O
+      EW7v4cTgSTLJGH3HB2nvbKe7/wReIa9370YIwZm2c9xbvmt3FOkhZZ8C7Uet3w+wm9m1ab46
+      +u/8wlO/cuA1nPJdFZyTtfpP0iyWj30eQ7d+G5PuxmMsbSxQ0qv/NsFaUvMFABfF9bcsfxVF
+      KByL9DGTnLL8taT9q/kCeJp/jFziKxiG9d+Z5ZYp1afmCyDUBtRAP8UN6x94fbL1DGMr9+Wn
+      wlWk5gsA4G19lnzidQyL35gel4ewr0E+SKOKyAIALm8ziqeF0qb1lymHuq5wQ54GVQ1ZAAAE
+      vrZPkYu/avlR4ELHRe7IB2lUDVmAdyjeDoQrgJaxdmPbel8YTS+RKWQsfR1pf2QB3iHEg6PA
+      y5Z/d955nJLcMqUayAJ8F5e/DwwdLWvtHVwXO69wY+GaPA2qAuVtj/7OOPStuyMYwOLsGFNz
+      yywuLFLMpplbdPY49IOjQD7+Mlj45myv72Alk5CfCleB8oY1FA+RcIjZWJJSfouNbBEhsmxn
+      UyzHEzwxdPHd3aGdQtd3xrcfEL5BtMI/U8wuoXjbLHvdgcggY4kRTrWc3fefeThrNXNK1rKn
+      lRqbW4nH4twbncDlgsTaCl3NYdRijlxRI+hxoSiKI2bBYWfD34ez+ts+SWHlVQI9v2TZ617u
+      eZJr89/mTNv5ff+Z3bJWK6dkLe9+gHyGiZkFPPURBgf6MPQ8LWsZFHQikTCxeJJQRyuAY26I
+      gfdnVeufILf8EkYxieKJWvKax5tP8C83/wEDA0Xs/43i5K9rNSqrom5fiNOnTnHieB9CgOLy
+      0tIcIdocRXG56Xznze90Qih4Wz5BLv6aZa+hKiotoVZi6SXLXkN6vOo/RtnE3XCVUmYMvbhh
+      2Wtc6rrK9Xn5qbCdZAH2IIQLb/OPkF/5smWvca79AsPLt+XlUBvJAjyCp/FDFDduopes+dQ2
+      4AmiKirpfNqS9aXHkwV4BKG48TT9AIXVr1r2Gk90XuLWotwyxS6yAI/hbXqGQupbGJo1z0B+
+      sGeQPA2yhyzAYwiXD0/jUxSS37Rk/WiwmXRug6JWsGR96dFkAfbBE/1h8slvWHLzvBCCU61n
+      GYkPm7629HiyAPugqEHc9RcppL5lyfpyB2n7yALsk7fl4+RXrLl5vrepn9m1aXmvsA1kAfZJ
+      cYdRg4MU182/YqMIhe7GHuZSM6avLT1aWbNAupZnfHyabFGnr6uFWHwVxe0n4HHR0lRHbC3P
+      sa4Wq7Laztf6HJnpP8HdcBVRxvzOfjz4VLg30m/qutKjlfekeMVDOOQjnUhT19CEW1UYn1sh
+      v7FJLL7CpcvvjUM75bKeruuUSvs8rVEawN1KYeM2rtA5U3OcbD7Dvw2/wnNnX9jz95SV1WZO
+      yVr2OHRrRw+riRskV5dZXMnwxJkTTIyN4ylm2S5ohBw2Dg2UtY9poOMFtuf+ilD4AmDetKPf
+      5SforSOd36AxENnz9zllz1VwRtaDjUOHo2iFAn6XxkIsQaSp6d1x6Lp2549DP4ribUOodWiZ
+      cdTQSVNzXOq6wvXF7/CDJ35kz99zVL+udpG7Qx9gF+PS9gy5pX8iOPC7pv4lr2dT/PVbf8Fn
+      n/m9Xdd1yo7L4JyszjlPqSJqoBcALTtr6roN/kbyxRz5kjVjF9L7yQIckK/t0+SW/9X0H/bP
+      tT/B3dhtU9eU9iYLcEBq8ARGaRM9HzN13aF3dpB2ylU0p5MFOKgHG2ktv2Lqm7WroZuljQX5
+      qfAhkQWogFp3AT2/hFFMmramEIKB6CBTyXHT1pT2JgtQASEE3tbn3tlU17yjwKWuq1yT9wof
+      ClmACrnDVyhlxjBK5t3WeLLlDGOJEflzwCGQBaiQEAre5o+TT/ybadspqi6VSLCJxFbclPWk
+      vckCmMDT+EGK6Zvo2rZpa17qelI+T+wQyAKYQCgq3ujHyK+8YdqaFzqGuL14Q54GWexAu0OP
+      Ts5Qyme4NzxMYi3N6uoqulZgOb5qVc6q52l6huL6m6bdPB/yhjAw2JYP0rBUWbNAhmGgayVu
+      3bqDz+dm8PQ5Ru8N41HdGFqe7sGz+N0Kuq47ZhrUzLmlXPxVhOLG2/xjpqz3lZHXCfsbeKr3
+      acBZM1ZOyVr2tFJyJY4iFAqGgksAQpDPbpEtwoCq7JTEYdujmzXQ5o58jMzEH6A2fhShuCte
+      72LHJV689QW+r+eDgLlZreaUrGWPQyc3tnB5vPR1NXN3eJiGSAsuvUhrc5i5+Rj9xzowDMMR
+      7QfMzeoK4Wm4jLbxJt7oD1S8XHtDJ2vZJIYwUBW1dr+uFpLj0CaP7eqlNFvjf0TdqT9EiMrX
+      /cL1v+d8+0XOtp93zIgxyHHomqWo9aihUxTXzbmEean7KtcX3pZXgywiC2ABX+tz5Ex68vzx
+      6AkmV+VckFVkASygeCK4fF2U0pXP9StCoT3cyeLGvAnJpIfJAljE1/Y8ufgrphwFLssHaVhG
+      FsAiLm8bwt2AlhmteK1z7Re5E7tlQirpYbIAFvK3fZrccuVPnve5fXhVL+mcdY9rqlWyABZy
+      +XsAF1p2puK1hrqucGvpesXrSN9LFsBivnZzbp4f6rrCjUW5g7TZZAEspgaPY5Qy6PnKHoca
+      CTRhGAZLGwsmJZNAFuAQiJ0rQib8LPDc2Rd45c4XTcolQbnj0IZBfGmBxfgqulZkanKCrWye
+      zFYGw9DZSG9aldPR1Lpz6Pk4erGycfG+pgHypTyL6/IzAbOUVwC9gDsQZm1pntGxUZo7e5gY
+      G2VpcYmFqTFK5Q+X1oQHN8/nl79U8VHgU+d/gpfvfBEDORphhrK3R99MTuNraKbeXWBi9D6q
+      J0Aus06yJPi+fv/R3h69AkroIqXYS5Tyawg1fKA1dF2nO3yMklZkLjlDZ7jb5JTmccr26GVN
+      g5a2k3z9zXv09nTidpXI5TUKmiDkddPaFCKWLjHY21nT06CPUlj7b0rbs/g7f+pAs/IPss6s
+      TfH63Zf51e//LMLELdrN5JRp0LISqoEmfvhjH97zvw/uva29BLgbP0gu/hqG9jxCDR54nWON
+      fWiGznxqjp7GYyYmrD3yKtAhEsKFN/pD5Ff+HSo4hxdC8KnzP86X7nzRMaea1UoW4JB5mj5C
+      MfUWhpavaJ2exl4A5lLmbtFea2QBDplQPHiaPkJ+9WuVrSMEn5RHgYrJAtjAG/1BCslvVvzk
+      +e6GYyhCYTY1bVKy2iMLYAPh8uNueJLC2n9Vts67R4EX5VHggGQBbLLz5Pk3MAytonW6GnpQ
+      lZ1Lo1L5ZAFsoqgh1LpzFFNvVbSOPApURhbARr7WZ025eb4z3I1H9TK9NmlSstqxZwEe7PCm
+      y+8qllHcjbj8vZTSNytaRwjBJ8+9II8CB7B7AQyDv/nLP+XFF1/kv9+W96JaaWdUuvLnjHWE
+      u/CpfqaSEyYlqw17HgFy+SLRaJRw3Xsf2RuGzvLiHAuxBIahszA7TXJ9k63NLQxDY33dvKek
+      1AqXtwXF00Rpa6SidYQQPHf+Bb505yV5FCjDngX40AeuMDExgerxvfcv9SLeUBOp5UVmZybB
+      V0fA5yG2FGN+chzdVfmGsLXI1/YCueXK37gd9Z0EPAG5kVYZ9hiGM/jf7wzzcz/7U3zun17h
+      3PGf3fnXiof1xBSBSAvptRiNbj/37sfw6PmdcegBOQ59IO42EB4Km+O4Av17/rb9ZP3EmU/x
+      hRt/z29+/++YnbIsVfF13Yc9CiC4fG6Al15+lSefem/6U8uuMTGf5Fi3l+7uDuaW1/H6fATU
+      IP3ROiZmFxns7XTMzsBQPWO7/vYfJ7f8Ep7+395zVHo/WTsbuqnz1TOdmmCw+ZQVUfelWr6u
+      j/P+hIbB9Zs3yWRzeDxetrbeO69XA0380EeffvfXjdGO7/mjgw3WBT3q1OAAhp5Hzy3i8ncd
+      eB0hBM+de4F/vPY5PvvM7zlij347vf9nACG4dPEJ1Loon/nMT6CY+OA36dF2fhaofAuVtrp2
+      6rz1jK3cNynZ0bXrD8E33vpPXvzii/zd5/6OvOE97Ew1Sw2dRi+soBdWKlpn5yjwaV67W3mZ
+      jrpdCzD0gWf4jV/6efoHBmiLNh52ppolhHlbqLTWtdPgb2Q0Udnl1aNuj8ugBl/56tfZ3Nrg
+      7bflrsSHSa0fQstOY5Qq2wdUCMGz557ntWF5FHiUPQoguHjpCk0BN43NrYebqMYJIfC1PEsu
+      /mrFb9yWUBuRQBP3E/dMSnf07FqA6bG7fPmNN8jqbpYW5VZ8h83d+AFKm3cwtMqeESyE4Nmz
+      z/P63cpPqY6qXQvQEG3lw08/TW9fPz/zk5857Ew1TwgX3uYfJZ/4MpXcPA/QHGqlKRhlJH7X
+      nHBHzK4FaIw0k9na4tv/9TW+/B9fP+xMEuCJfITi+rcrvnleCMEnzj7P68OVD9wdRf8PQmha
+      CFj6CQgAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAAWyElEQVR4nO3dV3Bk133n8e+5ndDdyI0GBjn0RAKYHBlmSI619sq7JblW4toSLcmydl3W
+      w9ZuecuuctnP9vrBKrvKSbYkSlZYLiVLosuUbYbhJHJyRBgMgEbOoRE6h3v9MEPSKw5m0A00
+      Tt/u83khwEL4Tc/8Otw+/3OEYRgGilKgtGz/ArP2S+XeejKyZ70Auq5n+1dkRSqVkh0hI2bN
+      DXKyZ70AipLLVAGUgqYKoBS0tApgGAYzEyPMzC+jpxL0dPWSAmanxunr62M5FGZhfpHwygJL
+      wViWIivK5rGm+w3u0mJm5lapLLFjtVhIAZMTE5R4ailxOegfHSOaiLO3s+PDV/VmvTKhcm+9
+      rc6eVgGEEDidTiCCzeHEZhEA7Dt0lHh4me4+P+GFWRzlXuDBFSBd1035F2LWq1dmzQ1ysqdV
+      AMNIMTw4xPxSlIpyF3MLC6RGnDhFgpVgmJpt9SSK3ThtOvPLYbzlbgAsFktWwmdTMpnEak37
+      AVI6s+YGOdlFtt8JTqVSqgBbyKy5QU52dRVIKWiqAEpBUwVQCpoqgFLQCrYAsxPDXLvTA4ZO
+      1/ULjM4tk4iGePetcyQffs3Q/S7eOnOOaDzOpQtnuXjlJsGlOd49c4begRGp+ZXNUbAFKCqu
+      JBYOgJ7CU1FKYGWVRDKFS1g/LED/yARPP1XHxctXWKaYxPIk3T13adrZwehAn9T8yuYo2AKU
+      lpU++MBio7TYCYCruBTrwzf3ADSLhs1uJxxNoIeWCCUEmnAyPtwPRU4ZsZVNVrAF6L51lWH/
+      MCNjk1y92UVfdxfjI0P0jw5x504vANWlxbx9uZcTB55CI4VmtVNZWUY8FsXtdEv+EyibQb0R
+      tgazvqFk1tyg3gjLGUk9yZmBN1mNrciOomSZKsAjhGJBXrv9fQbm7suOomSZKsAjlDnL+cqx
+      rzK0MCg7ipJlaQ/E+Pu7GR6bIR5e5dL7V0kA48MDdN29w9xSkNGRcWbGhwiYfCCmo3YfPTNd
+      JFIJ2VGULEp7HqC5tZXh0UXsrhJqPOUYwFIoSvtTe+i+P0Bwfg63p5aOejupVMq08wBWYaWt
+      0kf31B06tu2THWfddF0nmUw++QtzkIzsm/OS2zBIJeNYLDYqvduIRMPoxkdzAGa9CnRq+2l+
+      cvc19tUfRAjx5G/KAeoqUHrSH4jxjxCKpVhcdBGMRhgbGaeloY7+oXHatm8nvLKKq0hjeTVC
+      ZZkrW7m3RF1ZA+FEmKVIgApXpew4Shao9wHW8MG90QX/WZYjAX65/dOyI62LegRIj7oK9ASH
+      Go5we+IGSd2cz6uVx1MFeAKn3UV9eaN6TyBPqQKsw0nfi5wffMeUV7OUx1MFWIfmylbmQ/ME
+      Y6uyoyibTBVgHTShcbT5BJdH3pMdRdlkqgDrdLT5BNfGLqPr5t1+XPk4VYB1KnGUUunyMBIY
+      lh1F2USqAGk46XuRc4PvYKBeDOcLVYA07PDuYnxpjEg8IjuKsklUAdJg0SwcaDjE9bErsqMo
+      m0QVIE0nWp7j0sgFdMO8uzArH1EFSFOFqxKnzcXU8oTsKMomSHM1qMHQQA/CUUV1CfSPz+Eu
+      LkNLBknqGtsaGlmaW8ChJXBU1lNR7MhWbqlO+l7gnP8Mv3bwC7KjKBuU8UDMyOQynR0d9HZ3
+      U2QV6EYKwzCYGvPjrqqjo9HcAzGPG87YWbWHn979EeFYGLvFvsXJHk8NxKQn47WnTpsgHEtg
+      AA3NrdgsBr2DY1R6a4lEw6QMsJp8IGatpblWrLTXdtI9c4cjTce3ONnjqeXQ6UlzJjjFsH+U
+      cHiZmsY2pkcHaWhqIbS6xODwBD5fG9U1NezZ1cZqML8vFT7b+jwX/WdN+eimfCTNp0AWfDt3
+      f/j5jg8+LnXjqX7wodNeBoA9z3cO9JZUY2AwF5yluqRGdhwlQ+oqUIYEgmfbnueC/13ZUZQN
+      UAXYgH11B9TWKSanCrABdqsDn2cHvTNdsqMoGVIF2KCTvhc4P3hGvRg2KVWADaorayAUD7EU
+      CciOomRAFWCDhBA83foc7w2dlx1FyYAqwCY41HiUWxPXSamtU0xHFWATOG0Pt06ZV1unmI0q
+      wCY56XuBcwPqxbDZqAJsktZKH/OhWYLxoOwoShpUATaJEIKjzU9zeeSi7ChKGlQBNtHR5qe5
+      NnoJXVfTYmaRwUBMN9gfDMQMTMzjcpXiIMJqOIq3roXIyjJ2LY7T05i3AzFrKXGUUOmqYiQw
+      RKvHJzuOsg5pb4+eSoYZHl0kFllm91Pt9HR3gzBo373r4Qkxs7ir6unY7UPXdXRdN83hEv+e
+      rutoWvoPkH2zvVwde5+XD305C6meLNPcuUBG9oynD9w2jdVoHAMQukE8FsFqdVDprSUaDZLU
+      wZanAzGPs2fbU/y46/+RMOI4bVt/QIgaiElPBifEjBJJ6LT5fEyNDdPY3IZDxBiZmMPX1ko4
+      GMTl0AiFI5SXmPuEmExomoUDDYe5PnaFZ9uelx1HeQJ1QswaNnJvFAgv8neX/pLfeeH30cTW
+      PqSrR4D0mPPJYo6rcFXitDqZWpmUHUV5AlWALHnu4aEaSm5TBciS9tpO+ufuE0+a+8DwfKcK
+      kCVWzUr7tk5uT96UHUV5DFWALHowNK+2TsllqgBZ5C2pxjB05kNzsqMoa1AFyCKB4Lk2tXVK
+      LlMFyLJ99YfomrpDUm2dkpNUAbLMbrWzvWoHPTPdsqMoj6AKsAXUQdu5SxVgC9SVNRCMB1mO
+      LsmOovycjAtgGDqBxQWSKZ1YNMzc3BzReIJEPIGRShJPqB0SPvBg65STvDd0TnYU5edkXICR
+      wX4isThdPffw+/1YLBYEBsNDo/T39ZJQQ1H/n8ONx7gxfo2UOmg7p2S89K6oyE5geYVQKMy2
+      xmpmpidxV3hZmBnF7W3CZbfk7QkxmbAJG/WlDdyf6WWHd/eTvyFD6oSY9GRcgIpKL4ZlBTQr
+      CI2ykmKC0RiemibQwyyH45S7H4xEFtpy6LWc2nGat/v+hd3b2rM2JaeWQ6cn499mKyrCmUhR
+      s60WPZkgFIlRW1JMMpnCahEkU+a718+21kofc6FZQvEgxY4S2XEUNvAaQNOslJeVoQmB1Wan
+      rLQEIQQ2mxWhWbDZzHkvlE1CCI42neDyyHuyoygPqcugW+x4yzNcGXlfHbSdI1QBtlixo4RK
+      t4fRwLDsKAqqAFKc8p3m7MA7GKjXSbKpAkiws3o3o4FhYomo7CgFTxVAAk1oHGw4wrWxy7Kj
+      FDxVAEmebjvJ+0PnTfkmYT5RBZCkwllBkU1tnSKbKoBEJ30vck5tnSKVKoBEHbV7uT/bSzwV
+      lx2lYKkCSGTRrHTU7uP2xA3ZUQqWKoBkz/oeDM2rF8NybGggZm52hkRKR08lmJ1bwMAgFouj
+      pxLE4uZckrvVvMXV6IbBgto6RYqMd4ce6r+Hu9zD5NQsNpHE46kgmLBgRKPoyRCNO9o/nAlQ
+      y6Ef78rI+0wsj/Ere1/a8M9Sy6HTk/Fvc7mKWFhYJBSOUFZSRE1NLfP3BwjOTeP2NuG0aWog
+      Zp06t+3nZ73/yCd3fwqLtrE7CzUQk56MC1BW7iGuBxAWOyIRxD/kp6SsEodmRzMiLIViVBQX
+      AWog5kmsVis7vLu4P99LZ93+Df0s9QiQnox/m8PporJSo97lQhg64Wgcl6sIPVmFZhGk1EBM
+      Wk75XuTHd1+jo3afKc9UM6uMXwQLzYLb7UYT4sHHLicCgcVqQQgNq9V89/oy1ZU1EIqtshJd
+      lh2loKjLoDniwdYpp7iotk7ZUqoAOeRI0zGuj11RB21vIVWAHFJkc9JQ3sTAfJ/sKAVDFSDH
+      PL/9NGcH3jblpWMzUgXIMS2VbcwGZwgnQrKjFARVgBwjhOBY8zNcGr4oO0pBUAXIQcdbnuXy
+      yEW1dcoWUAXIQcWOYipdVYwFRmRHyXuqADnq+e2/wLsDb6kXw1mmCpCjdlbvZmRxiHhKHbSd
+      TaoAOUoTGocaj3J1VG2dkk0bGoiZnpwgEk8SCa4wOjpKMBIjGo2hp+JEYupUxI16pu0U7w2d
+      U0+DsijjAoz394GrhL7eHobHxvF6vRTZLYyNjNHXew+xwXXtCpQ/3DplelVtnZItGU+EBaZH
+      GZhcxOZwUu8pZn4xQFGphxn/PdzeJjp2t6HrOrqum3J5r67raJr8Z4h3p27RO9PNS/s/v66v
+      z5XcmZCRPeN5gOVgmIqyUpZXQiSSSRw2Gyk9haemCQtRFlejeEqdgBqI2Yi99Qf4adcPMYSB
+      zWJ74tfnSu5MmGogptm3i3g8TqvNhsAgkUhht9swDAMhBLp63ropLJqFzroD3J64zuGm47Lj
+      5J3MB2KEwOFwYNE0NM2Cw2FHCIGmaQghsJj0YTgXnfS9wLnBM+rFcBaof6UmUFXsRTd0FsML
+      sqPkHVUAExAItY9olqgCmMSBhsPcnrihDtreZKoAJmGz2NhZvYee6buyo+QVVQATUdNim08V
+      wERqS+tZja+yGluRHSVvqAKYiBCCZ1tPccF/VnaUvKEKYDJHm09wdfSSehq0SVQBTMZhLaKp
+      opn+ObV1ymZQBTAhNS22eVQBTKilso2Z1WkiiYjsKKaXcQES0RD37t1jem6R1cAcPb33iCZS
+      LC4EiK4GWAqpUb5sEUJwouUZLg1fkB3F9DIuwNToCN7GFqanJhgen2aXrwm/38/83Bz3h8Yp
+      ddk3M6fyc060nuS9YXXQ9kZlvBza5nQyMzqExepAMxJoFhu6nmRxfpaiim0IUCfEZJFDc+Bx
+      VTE0P0hTRcuH/z/Xcz+OjOwZT4TNT48zGwgiLDbKHILF1SC1TT7CS0s4bSkMpwdvuVudEZZF
+      92Z6uDxykS8c+cqHU3dmyL0WUw3EVG1roGrbR5/XPfyvp9S9wUjKeu2q3sP/vfEdEqk4dqtD
+      dhxTUleBTEwIweGm41wdvSQ7immpApjcc23Pc14dtJ0xVQCTK3OW47Q5mVmdlh3FlFQB8sAH
+      7wwr6VMFyAOddfvpmb5LSjfn5U+ZVAHygCY09tUf5Ob4ddlRTEcVIE+c2n6as4Nvy45hOqoA
+      ecLjrkI3dALhRdlRTEUVIE8IBKd86lEgXaoAeeRg4xFuTd4gmojKjmIaqgB5xCIsGOj84Ma3
+      ZUcxDVWAPCKE4LdO/A+GF/0shtQ2iuuR8WrQlcAcU7OLJA0L3rIiAishtjU0koxEcdkNYlox
+      5cUOtRo0Q4ah88HfjBDiw123H3ysYyAQ8HAJhECIBx/rus7Y8giv3vwuv3v6D9GEee7jZNzm
+      GRcAIBlbpW94nsTqLCWeWlpb6um/N0A0EWdvZwdg3gMbZBd3ZmyI+8Oj3PNPcGRPCyuxFO37
+      j+Ap0fjxqz8hbnHwiYN1/FPXKkfafcQDEyxFdHa176OmsoQ3el4nkYrzqc7PSPszpEvGbb6B
+      uhkM9g+xfU8ndq2FeHiZ7j4/4YUZHOXVAB+eEGPGhVq6LveQ6qq6JlbmJ6j5hU9y6+1/wFNb
+      z8TkNOXeBEVtR9gT8jMcLqHatcLs/AIzg714vI1MTM1QVebiP+z6JH927k+4N93DDu8uqX+W
+      9ZJxm2dcAEPXsblLcVgEE6NDrATD1GyrJ+5247LrzC+H8ZY/mA1QT4EyYBj4Z0L84oEKRmu2
+      ceToYS7dvs++HZ2wcIMpEvgq3Oz0PcM7Z85Q4anl8LEjnL9yl0MdOwD4yomv8rV3/w+/e/oP
+      cdtzf07DdE+B1kP2U4lMyS9AgsBSlIqKEvREhBt3+jhwYB8WTTAzPkREc9NcU8GN6zfY2XkA
+      t83gxq1uOvftxWH7KPftiRtc8L/LV5/9Xzl/VpsqQA6RXoAM/XxuwzD4/vVXaChv4tT20xKT
+      PZmM29x8r06VtAgheOnAy5wfPMPk8oTsODlHFaAA2Cw2vnz8t/nmpb8ikYrLjpNTVAEKRF1Z
+      Pc/5XuDVm98z5VW5bFEFKCAnfS+yEl3i9uQN2VFyhipAARFC8MWj/52f3HmNQDggO05OUAUo
+      MG67m88d+hLfuPRX6IbcN/tygSpAAdrh3cUO705+1vO67CjSqQIUICEE/6n9V+ievsvgfL/s
+      OFKpAhQoi2bhN4//Nt+99i3C8bDsONKoAhQwj7uKX37qU/z9tW8U7KVRVYACd6jxKEXWIt4b
+      Oic7ihQZF2AlMEdfXx9dvfdZmp+mu7uHcCzB/NwCoaV5loLqhBgzEELwqwe/wDv9bzKzOiU7
+      zpbb2EBMdJn7owFS8VXad22nd3AMLZUkkdLp7GwH1EDMVss099jSKN+79k3+94t/gFWTswjQ
+      dAMxAwMj+PZ00n+vG6FZAJ3gcgBbiQf4aCDGjHRdz/nlw4+Sae760gYONx3nhzd/wEsHPp+F
+      ZE8m4zbf0ECMo7gch0VQVVZMd28fDS3bCZeU4bTpLCyHqTLxQIxhGAWX+/TOX+Qvzn+Nntku
+      Omv3bXKyJ5Nxm6t5gDXkyzxAulajK/zpu3/E/zz1e5Q5yzcx2ZOpeQBFupKiUj67//O8cuXr
+      BbFUQhVA+Zg9Ne3UlzfxZt/PZEfJOlUA5WOEEHy6479wa/w6w4t+2XGyShVAeSSrxcZvHPst
+      /v7qN4kmIrLjZI0qgLKm6pIaPrHrl/j+9W/n7VIJVQDlsY41P4OBwZXR92RHyQpVAOWxhBB8
+      7tCX+Nd7P2MuOCM7zqZTBVCeyGlz8vLh3+Bbl79OMpVfB/GpAijr0lLZxt66A7ze9aO8ej2g
+      CqCsixCCT+z6j4wtjXBvtlt2nE2jCqCsm0Wz8MWj/43Xbv6A1eiK7DibQhVASUu5s4JP7/0M
+      37n6d3mxVCLjAsTDy9y5283U7AL+/l76+vpYDoUZGR5jesxPQA3E5K3O2v143F7O9L8pO8qG
+      Zbz0zj/gx1bkJhKNoad0dOPBctapsSHcnlo6GuykUilTH5CRTJrvisdW5f5U+2f42tk/Zrtn
+      J/VljZvyM2Xc5msuhzYM48E/XCHQHjGkMNLfS2m9j7GBPnbu3IFN0+kdHMMuBJFohPa9e7Fq
+      Qi2H3mJbmXtqeYJvXf4bfufF38dhLdrwz8ud8wEMg2/89Z9T4qmlpnknp47t//iX6En8g36K
+      K7xY9QgLS0EaW1qJhcK4ijRCCQsVpS5VgC221bnPD55heNHPy4e/vOFpLhm3+Zq/LRpL0FpV
+      RVnJo4/WEZoV346dDz+rwPPgWDCc9jIA7M5NzankqGfaTtE7082N8ascajwqO07a1nwR/Mzx
+      wwwMDGCxbfyhTclfmtD4/OEv8UbP6yyE5mXHSdsaBTC4eK2blz/3EufffWtrEymm47YX86sH
+      f51XrvwtSd1cFw7WKIDgcIePH/34dY6eOLm1iRRT2l61k13e3bzR81NTXfX7eAEMgxu3bhGM
+      RLHbHQSD+fGOn5JdQgh+6an/zMBcP/1zfbLjrNvHCyAEB/fvw1pSxUsvfRYtVbgbpyrpsWpW
+      vnj0K7x687sEY0HZcdblkU+Bbl46yw9f+yHffuXbxHTHVmdSTOyDDXe/d+1bplgqseb7AAP3
+      7jI5t0R5dT17d/sy/gXqfYCtlQu5DcPge9dfoamimZO+F9f9fTm0L5DBP7/5DquhZa5cubql
+      gRTzE0Lw2f2/xgX/WSaXx2XHeaw1rwLtP3gYj9NGZVX11iZS8oLDWsSvH/lNvnP1G8STubsw
+      8pEFGLrfzRv//C9EdBuTk7ndYCV3NZY3caz5aX50+9WcvTT6yAKUV1Xz3HPP0tLaxhc/91+3
+      OpOSR05tP81SZJE7kzdlR3mkRxagotJLKBjk8rm3eONf397qTEoe0YTGy4e/zOtd/0AgvCg7
+      zsf8G6Ga9/Cr2E77AAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
