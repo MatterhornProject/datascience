@@ -1,0 +1,10 @@
+# Ignorowanie dużych plików w katalogu dane/
+dane/delays.csv
+
+# Ignorowanie wszystkich plików większych niż 100 MB w katalogu "dane/"
+dane/*.csv
+!dane/README.md  # Wyjątek dla plików, które mają pozostać w repozytorium
+
+# Ignorowanie tymczasowych lub roboczych dużych plików
+*.bak
+*.tmp
