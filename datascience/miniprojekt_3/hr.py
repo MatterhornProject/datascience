@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Wczytanie danych
-data_path = r"C:\Users\macie\Desktop\ISA\miniprojekt-2\dane\HR_Analytics.csv"  # Upewnij się, że ścieżka do pliku jest poprawna
+data_path = r"C:\Users\macie\Desktop\ISA\miniprojekt-2\dane\HR_Analytics.csv" 
 data = pd.read_csv(data_path)
 
 # Podstawowa eksploracja
