@@ -1,0 +1,15 @@
+RAPORT ANALIZY DANYCH
+==================================================
+Data: 2025-06-15 00:21:21.291562
+Plik: D:\Dev-Env\sources\repos\DataScience\datascience\datascience\miniprojekt_4\dane\train_delays.csv
+Rozmiar: 433.79 MB
+
+KOLUMNY:
+0: datetime (object)
+1: id (object)
+2: carrier (object)
+3: date (object)
+4: connection (object)
+5: arrival (object)
+6: delay (object)
+7: name (object)

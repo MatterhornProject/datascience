@@ -1,0 +1,33 @@
+WYNIKI TRENOWANIA MODELI
+============================================================
+
+HistGradient Boosting:
+  MAE (test): 0.07
+  RMSE (test): 1.10
+  R² (test): 0.994
+  Czas trenowania: 6.2s
+
+XGBoost:
+  MAE (test): 0.24
+  RMSE (test): 1.16
+  R² (test): 0.994
+  Czas trenowania: 2.8s
+
+Random Forest (Fast):
+  MAE (test): 1.19
+  RMSE (test): 3.34
+  R² (test): 0.946
+  Czas trenowania: 14.0s
+
+Ridge Regression:
+  MAE (test): 4.37
+  RMSE (test): 12.50
+  R² (test): 0.249
+  Czas trenowania: 16.5s
+
+SGD Regressor:
+  MAE (test): 4.57
+  RMSE (test): 12.52
+  R² (test): 0.246
+  Czas trenowania: 12.6s
+
