@@ -9,11 +9,8 @@ import matplotlib.pyplot as plt
 
 st.title("Dashboard: Analiza opóźnień pociągów")
 
-st.image(
-    r"D:\Dev-Env\sources\repos\DataScience\datascience\datascience\miniprojekt_4\pendolino.webp",
-    caption="Pendolino — symbol nowoczesnych kolei w Polsce",
-    use_container_width=True
-)
+
+st.image("pendolino.webp", caption="Pendolino — symbol nowoczesnych kolei w Polsce", use_container_width=True)
 
 
 
